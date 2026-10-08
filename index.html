@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventFlow — Editable Personal &amp; Collaborative Workflows</title>
+    <script>
+      /**
+       * Landing-view bootstrap.
+       *
+       * Fresh visitors should land on the project list; a returning session that
+       * already has projects and a selection should resume on the board rather
+       * than forcing a detour through the dashboard. This runs before the bundle
+       * so the first paint is already correct.
+       */
+      (function () {
+        try {
+          var raw = localStorage.getItem('eventflow.state.v1')
+          if (!raw) {
+            window.__EVENTFLOW_BOOT__ = { view: 'projects', selectedProjectId: null }
+            return
+          }
+          var s = JSON.parse(raw)
+          var projects = (s && s.projects) || []
+          var id = projects.length ? projects[0].id : null
+          window.__EVENTFLOW_BOOT__ = { view: id ? 'board' : 'projects', selectedProjectId: id }
+        } catch (e) {
+          window.__EVENTFLOW_BOOT__ = { view: 'projects', selectedProjectId: null }
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

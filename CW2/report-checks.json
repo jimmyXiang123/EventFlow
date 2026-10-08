@@ -1,0 +1,80 @@
+{
+  "format": "docx",
+  "verdict": "pass",
+  "checks": [
+    {
+      "id": "package",
+      "status": "pass"
+    },
+    {
+      "id": "contains",
+      "status": "pass",
+      "text": "Prototype Overview"
+    },
+    {
+      "id": "contains",
+      "status": "pass",
+      "text": "Table 3"
+    },
+    {
+      "id": "contains",
+      "status": "pass",
+      "text": "Prototype Limitations"
+    }
+  ],
+  "summary": {
+    "paragraphs": 254,
+    "tables": [
+      {
+        "rows": 2,
+        "columns": 3
+      },
+      {
+        "rows": 6,
+        "columns": 2
+      },
+      {
+        "rows": 4,
+        "columns": 2
+      },
+      {
+        "rows": 1,
+        "columns": 4
+      },
+      {
+        "rows": 5,
+        "columns": 4
+      },
+      {
+        "rows": 8,
+        "columns": 5
+      },
+      {
+        "rows": 5,
+        "columns": 4
+      },
+      {
+        "rows": 5,
+        "columns": 4
+      }
+    ],
+    "sections": [
+      {
+        "page_twips": {
+          "w": "11907",
+          "h": "16839",
+          "code": "9"
+        },
+        "margins_twips": {
+          "top": "1440",
+          "right": "1440",
+          "bottom": "1440",
+          "left": "1440",
+          "header": "720",
+          "footer": "720",
+          "gutter": "0"
+        }
+      }
+    ]
+  }
+}

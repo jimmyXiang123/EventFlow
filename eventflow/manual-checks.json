@@ -1,0 +1,12 @@
+{
+  "format": "docx",
+  "verdict": "fail",
+  "checks": [
+    {
+      "id": "package",
+      "status": "fail",
+      "detail": "[Errno 2] No such file or directory: 'eventflow\\\\EventFlow_\u4f7f\u7528\u624b\u518c.docx'"
+    }
+  ],
+  "summary": {}
+}

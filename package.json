@@ -1,0 +1,33 @@
+{
+  "name": "eventflow",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "EventFlow - From Fragmented Information to Editable Personal and Collaborative Workflows (CSI405 prototype)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "test": "node --experimental-strip-types qa/logic.test.mjs && node --experimental-strip-types qa/walkthroughs.test.mjs",
+    "check:ui": "node qa/run-ui-checks.mjs",
+    "check": "npm run test && npm run check:ui"
+  },
+  "dependencies": {
+    "@dagrejs/dagre": "^3.1.1",
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@xyflow/react": "^12.12.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}

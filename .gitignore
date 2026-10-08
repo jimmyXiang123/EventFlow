@@ -1,0 +1,16 @@
+# Build output
+dist/
+node_modules/
+
+# Local tooling
+.vite/
+*.local
+
+# Verification artefacts: renders and screenshots are regenerated on demand.
+qa/*.png
+qa/*.json
+qa/dom-*.html
+
+# OS noise
+.DS_Store
+Thumbs.db
